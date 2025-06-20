@@ -134,7 +134,8 @@ const VideoProj = () => {
       autoPlay loop muted></video>
        <video className='scale-40 relative bottom-70 border-2 border-sky-400' src='https://cdn-front.freepik.com/revamp/temp/hero/1905-AnonymousHome1920x1080-compressed.webm'
       autoPlay loop muted></video>
-      
+             <video className='scale-40 relative bottom-70 border-2 border-sky-400' src='./video2.mp4'
+      autoPlay loop muted></video>
 
    </div>
   );
