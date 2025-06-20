@@ -5,11 +5,10 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
     base: '/portfolio/',
-  theme: {
+ theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-        roboto: ['Roboto', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },
