@@ -64,9 +64,10 @@ const Header = () => {
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: navItems.length * 0.2 }}
-          className="hidden md:block bg-blue-400 hover:bg-blue-500 transition-colors px-4 py-2 rounded-md font-semibold whitespace-nowrap text-sm sm:text-base"
+          className="hidden md:block bg-blue-400 hover:bg-blue-500 transition-colors px-4 py-2 rounded-md
+           font-bold whitespace-nowrap text-sm sm:text-base"
         >
-          Login
+          More
         </motion.button>
 
         {/* Mobile Menu Button */}
@@ -120,7 +121,7 @@ const Header = () => {
               transition={{ duration: 0.3, delay: navItems.length * 0.1 }}
               className="bg-blue-400 hover:bg-blue-500 transition-colors px-2 py-2 rounded-md font-semibold whitespace-nowrap text-sm relative"
             >
-              Login
+              more
             </motion.button>
           </ul>
         </motion.div>
@@ -189,7 +190,9 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-            I'm a Frontend Developer, Graphic Designer, Video Editor, and Content Creator dedicated to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
+           <div className='font-semibold' ><span className='text-green-500' >Frontend Developer </span>| 
+           <span className='text-red-500'> Video Editor </span>| <span className='text-blue-500'>content creator </span>| <span className='text-pink-500' >graphic designer</span><br /></div> dedicated 
+            to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
           </motion.p>
         </motion.div>
       </div>
