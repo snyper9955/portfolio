@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-black to-gray-900 text-white w-full overflow-hidden relative bottom-6">
+    <div className="bg-gradient-to-t from-black to-gray-900 text-white w-full overflow-hidden relative bottom-0">
       {/* === Header Bar === */}
       <div className="flex justify-between items-center flex-wrap gap-4 px-4 sm:px-8 py-4 mx-auto">
         {/* Brand */}
