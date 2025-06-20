@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // ✅ import navigate hook
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
@@ -9,7 +9,7 @@ const projects = [
     description: "Build interactive websites using React, TailwindCSS, and API integration.",
     bgColor: "from-purple-500 to-pink-500",
     glowColor: "rgba(168, 85, 247, 0.4)",
-    path: "/portfolio/web-projects" // or "#" if no page yet
+    path: "/portfolio/web-projects"
   },
   {
     title: "Video Production",
@@ -28,12 +28,8 @@ const projects = [
 ];
 
 const Project = () => {
-  const navigate = useNavigate(); // ✅ React Router hook
-
   return (
     <div className="min-h-screen bg-gradient-to-t from-gray-950 to-black text-white py-10 px-6 sm:px-12 lg:px-24 relative top-20 overflow-hidden">
-      {/* ...animated background (unchanged)... */}
-
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.h1
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-16 text-center leading-tight relative bottom-5"
@@ -64,41 +60,39 @@ const Project = () => {
               }}
               viewport={{ once: true }}
             >
-              {/* Floating and glow effects stay the same */}
-
               <h3 className="text-2xl font-semibold mb-3 relative z-10">{project.title}</h3>
               <p className="text-white/90 text-sm mb-6 relative z-10">{project.description}</p>
 
-              <motion.button 
-                onClick={() => navigate(project.path)} // ✅ navigate on click
-                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-black
-                 bg-white rounded-lg hover:brightness-110 relative z-10 overflow-hidden"
-                whileHover={{ 
-                  scale: 1.05,
-                  boxShadow: "0 0 15px rgba(255,255,255,0.6)"
-                }}
+              <motion.div
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 transition={{ type: "spring", stiffness: 400, damping: 15 }}
               >
-                <motion.span
-                  className="absolute inset-0 bg-white/30 opacity-0 group-hover:opacity-100"
-                  initial={{ x: -100 }}
-                  whileHover={{ x: 100 }}
-                  transition={{ duration: 0.6 }}
-                />
-                <span className="relative z-10">View More</span>
-                <motion.span 
-                  className="relative z-10"
-                  animate={{ x: [0, 4, 0] }}
-                  transition={{ 
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatType: "loop"
-                  }}
+                <Link
+                  to={project.path}
+                  className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-black
+                    bg-white rounded-lg hover:brightness-110 relative z-10 overflow-hidden"
                 >
-                  <ArrowRight size={18} />
-                </motion.span>
-              </motion.button>
+                  <motion.span
+                    className="absolute inset-0 bg-white/30 opacity-0 group-hover:opacity-100"
+                    initial={{ x: -100 }}
+                    whileHover={{ x: 100 }}
+                    transition={{ duration: 0.6 }}
+                  />
+                  <span className="relative z-10">View More</span>
+                  <motion.span 
+                    className="relative z-10"
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{ 
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "loop"
+                    }}
+                  >
+                    <ArrowRight size={18} />
+                  </motion.span>
+                </Link>
+              </motion.div>
             </motion.div>
           ))}
         </div>
