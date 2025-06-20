@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import video from '../assets/v1.mp4';
+
+
 
 const VideoProj = () => {
   return (
@@ -129,7 +130,12 @@ const VideoProj = () => {
       />
      
     </div>
-     <video className='scale-40 relative bottom-70 border-2 border-sky-400' src={video} autoPlay loop muted></video>
+     <video className='scale-40 relative bottom-70 border-2 border-sky-400' src='./video.mp4'
+      autoPlay loop muted></video>
+       <video className='scale-40 relative bottom-70 border-2 border-sky-400' src='https://cdn-front.freepik.com/revamp/temp/hero/1905-AnonymousHome1920x1080-compressed.webm'
+      autoPlay loop muted></video>
+      
+
    </div>
   );
 };
