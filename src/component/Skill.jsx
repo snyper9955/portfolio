@@ -38,7 +38,7 @@ const Skill = () => {
           className="text-5xl lg:text-8xl font-extrabold text-white text-center 
                      drop-shadow-[0_0_20px_rgba(255,69,0,0.8)]"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-orange-500
+          <span className="text-yellow-400
                 font-extrabold lg:font-extrabold  interactive-text">
             FRONTEND DEVELOPER
           </span>
@@ -71,7 +71,7 @@ const Skill = () => {
               className="text-3xl  text-center 
                          drop-shadow-[0_0_15px_rgba(186,85,211,0.8)]"
             >
-              <span id='react' className="text-yellow-400  interactive-text font-extrabold">
+              <span id='react' className="text-sky-400   font-extrabold">
                 REACT JS
               </span>
             </motion.h1>
@@ -83,7 +83,7 @@ const Skill = () => {
               className="text-3xl md:text-4xl text-center text-white
                          drop-shadow-[0_0_15px_rgba(186,85,211,0.8)]"
             >
-              <span className="text-sky-400 font-extrabold interactive-text">
+              <span className="text-pink-400 font-extrabold ">
                 TAILWIND
               </span>
             </motion.h1>
@@ -126,8 +126,9 @@ const Skill = () => {
           animate={{ opacity: 1, x: 0 }} 
           transition={{ duration: 1, ease: "easeOut" }}
           id="skills" 
-          className="text-2xl sm:text-3xl md:text-4xl mb-6 text-center
-          text-yellow-400 mt-8 lg:mt-0 relative top-2 font-mobile-skills interactive-text"
+          className="text-3xl md:text-5xl mb-6 text-center
+          text-yellow-400 mt-8 lg:mt-0 relative top-2 font-extrabold
+          drop-shadow-[0_0_20px_rgba(255,69,0,0.8)]"
         >
           MY SKILLS OVERVIEW
         </motion.h1>
