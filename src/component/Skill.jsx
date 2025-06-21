@@ -38,7 +38,8 @@ const Skill = () => {
         className="text-4xl md:text-6xl lg:text-8xl font-extrabold text-white text-center 
                    drop-shadow-[0_0_20px_rgba(255,69,0,0.8)]"
       >
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-orange-500">
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-red-500 to-orange-500
+        font-extrabold">
           FRONTEND DEVELOPER
         </span>
       </motion.h1>
@@ -70,7 +71,8 @@ const Skill = () => {
             className="text-3xl md:text-4xl font-extrabold text-center text-white
                        drop-shadow-[0_0_20px_rgba(0,200,250,1)]"
           >
-            <span id='react'  className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-500 to-teal-400">
+            <span id='react'  className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-500 
+            to-teal-400 font-extrabold">
               REACT JS
             </span>
           </motion.h1>
@@ -82,7 +84,8 @@ const Skill = () => {
             className="text-3xl md:text-4xl font-extrabold text-center text-white
                        drop-shadow-[0_0_15px_rgba(186,85,211,0.8)]"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500
+            font-extrabold">
               Tailwind
             </span>
           </motion.h1>
@@ -111,18 +114,22 @@ const Skill = () => {
                        relative bottom-[76px] left-[124px] scale-50
                        drop-shadow-[0_0_15px_rgba(186,85,211,0.8)]"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500">
+            <motion.span 
+            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500">
               Tailwind
-            </span>
+            </motion.span>
           </motion.h1>
         </div>
       </div>
 
       {/* Skills Overview Title */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center text-yellow-400 mt-8 lg:mt-0
+      <motion.h1 initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, ease: "easeOut" }}
+      
+      id="skills" className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-center
+       text-yellow-400 mt-8 lg:mt-0 
       relative top-2">
         My Skills Overview
-      </h1>
+      </motion.h1>
       
       {/* Skills Grid - Responsive */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full mx-auto lg:relative lg:top-10 relative
