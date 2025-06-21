@@ -10,7 +10,10 @@ const WebProj = () => {
        className='text-6xl font-bold text-yellow-400 
        drop-shadow-[0_0_20px_rgba(255,69,0,0.8)]'>Web Project</motion.h1>
         <motion.hr initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 2,delay: 1 }}
-         className='border-2 border-yellow-400 mt-2  relative top-3' /></div>
+         className='border-2 border-yellow-400 mt-2  relative top-3' />
+         
+         
+         </div>
     </div>
   )
 }

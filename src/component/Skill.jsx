@@ -28,9 +28,10 @@ const skills = [
 
 const Skill = () => {
   return (
-    <div className="min-h-[10vh] bg-black text-white flex flex-col px-4 py-10 w-full">
+    <div className="min-h-[10vh] bg-black text-white flex flex-col px-4 py-10 w-full relative top-20">
       {/* Main Title - Responsive */}
-      <motion.h1
+     <section id="services">
+       <motion.h1
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
@@ -69,7 +70,7 @@ const Skill = () => {
             className="text-3xl md:text-4xl font-extrabold text-center text-white
                        drop-shadow-[0_0_20px_rgba(0,200,250,1)]"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-500 to-teal-400">
+            <span id='react'  className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-500 to-teal-400">
               REACT JS
             </span>
           </motion.h1>
@@ -118,12 +119,14 @@ const Skill = () => {
       </div>
 
       {/* Skills Overview Title */}
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center text-yellow-400 mt-8 lg:mt-0">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-center text-yellow-400 mt-8 lg:mt-0
+      relative top-2">
         My Skills Overview
       </h1>
       
       {/* Skills Grid - Responsive */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full mx-auto lg:relative lg:top-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full mx-auto lg:relative lg:top-10 relative
+      top-10">
         {skills.map((skill, index) => (
           <motion.div
             key={skill.name}
@@ -150,6 +153,7 @@ const Skill = () => {
           </motion.div>
         ))}
       </div>
+     </section>
     </div>
   );
 };

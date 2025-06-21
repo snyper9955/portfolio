@@ -8,7 +8,7 @@ const navItems = [
   { name: 'Home', target: 'home' },
   { name: 'About', target: 'about' },
   { name: 'Services', target: 'services' },
-  { name: 'Contact', target: 'contact' }
+  { name: 'Connect', target: 'connect' }
 ];
 
 const Header = () => {
@@ -18,8 +18,15 @@ const Header = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const closeMobileMenu = () => {
+  const handleMobileNavClick = (target) => {
     setMobileMenuOpen(false);
+    // This ensures the menu closes before scrolling happens
+    setTimeout(() => {
+      const element = document.getElementById(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
   };
 
   return (
@@ -103,16 +110,12 @@ const Header = () => {
                 transition={{ duration: 0.3, delay: index * 0.1 }}
                 className="w-full text-center"
               >
-                <Link
-                  to={item.target}
-                  smooth={true}
-                  duration={500}
-                  offset={-100}
-                  className="block py-2 px-4 hover:bg-gray-800 rounded-md transition-colors"
-                  onClick={closeMobileMenu}
+                <button
+                  onClick={() => handleMobileNavClick(item.target)}
+                  className="block py-2 px-4 hover:bg-gray-800 rounded-md transition-colors w-full"
                 >
                   {item.name}
-                </Link>
+                </button>
               </motion.li>
             ))}
             <motion.button
@@ -195,6 +198,17 @@ const Header = () => {
             to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
           </motion.p>
         </motion.div>
+        <motion.a 
+          initial={{ opacity: 0 }} 
+          animate={{ opacity: 1 }} 
+          transition={{ duration: 1 , delay: 1}}
+          href="https://wa.me/919835958271"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 text-black px-4 py-2 rounded-lg hover:bg-green-600 relative top-6 font-bold"
+        >
+          connect me
+        </motion.a>
       </div>
     </div>
   );

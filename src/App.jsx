@@ -8,6 +8,7 @@ import About from './component/About';
 import GraphicDesign from './page/GraphicDesign';
 import VideoProj from './page/VideoProj';
 import WebProj from './page/WebProj';
+import Contact from './component/Contact';
 
 const MainLayout = ({ children }) => (
   <>
@@ -24,7 +25,9 @@ const App = () => {
           path="/portfolio"
           element={
             <MainLayout>
+              
               <Skill />
+              <Contact />
               <Project />
               <About />
             </MainLayout>

@@ -29,7 +29,8 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-t from-gray-950 to-black text-white py-10 px-6 sm:px-12 lg:px-24 relative top-20 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-t from-gray-950 to-black text-white py-10 px-6 sm:px-12 lg:px-24 
+    relative top-30 overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.h1
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-16 text-center leading-tight relative bottom-5"

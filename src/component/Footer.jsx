@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaYoutube } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const socialLinks = [
     { icon: <FaGithub />, url: "http://github.com/snyper9955" },
     { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/abhishek-kumar-86a157287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-    { icon: <FaTwitter />, url: "https://twitter.com/creativeabhishek" },
     { icon: <FaInstagram />, url: "https://www.instagram.com/creative_abhishek__?igsh=MWpvbzdib3dvYng2YQ==" },
-    { icon: <FaEnvelope />, url: "mailto:abhishek@example.com" },
-    {icon: <FaYoutube />, url: "https://youtube.com/@creativeabhishekoffical?si=B77M9PyTOXwXsQeS" },
+    { icon: <FaEnvelope />, url: "mailto:chemistryhero1@gmail.com" },
+    { icon: <FaYoutube />, url: "https://youtube.com/@creativeabhishekoffical?si=B77M9PyTOXwXsQeS" },
   ];
 
   const footerLinks = [
-    { title: "Home", url: "#" },
-    { title: "About", url: "#about" },
-    { title: "Services", url: "#services" },
-    { title: "Portfolio", url: "#portfolio" },
-    { title: "Contact", url: "#contact" },
+    { title: "Home", target: "home" },
+    { title: "About", target: "about" },
+    { title: "Services", target: "services" },
+    { title: "Portfolio", target: "portfolio" },
+    { title: "Contact", target: "connect" },
   ];
 
   const containerVariants = {
@@ -42,9 +42,9 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-t from-gray-900 to-black text-white pt-16   sm:px-6 ">
+    <footer className="bg-gradient-to-t from-gray-900 to-black text-white pt-16 sm:px-6">
       <hr className="border-t border-gray-700 relative bottom-2"/>
-      <div className=" mx-auto">
+      <div className="mx-auto">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -54,8 +54,7 @@ const Footer = () => {
         >
           {/* Brand Info */}
           <motion.div variants={itemVariants} className="space-y-4">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text 
-            text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent">
               Creative Abhishek
             </h3>
             <p className="text-gray-400">
@@ -88,12 +87,15 @@ const Footer = () => {
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <a
-                    href={link.url}
-                    className="text-gray-400 hover:text-yellow-400 transition-colors"
+                  <Link
+                    to={link.target}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                    className="text-gray-400 hover:text-yellow-400 transition-colors cursor-pointer"
                   >
                     {link.title}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>
@@ -109,20 +111,7 @@ const Footer = () => {
               whileHover={{ scale: 1.01 }}
               className="flex flex-col sm:flex-row gap-2"
             >
-              <input
-                type="email"
-                placeholder="Your email"
-                className="flex-1 px-4 py-2 rounded-md bg-gray-800 text-white focus:outline-none 
-                focus:ring-2 focus:ring-yellow-400"
-              />
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-red-500 text-black
-                 font-semibold rounded-md"
-              >
-                Subscribe
-              </motion.button>
+              {/* Newsletter form can be added here */}
             </motion.div>
           </motion.div>
         </motion.div>
@@ -133,7 +122,7 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="border-t border-gray-800  text-center text-gray-500"
+          className="border-t border-gray-800 text-center text-gray-500"
         >
           <p>
             &copy; {new Date().getFullYear()} Creative Abhishek. All rights reserved.
