@@ -71,7 +71,7 @@ const Skill = () => {
             className="text-3xl md:text-4xl font-extrabold text-center text-white
                        drop-shadow-[0_0_20px_rgba(0,200,250,1)]"
           >
-            <span id='react'  className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-500 
+            <span id='react' className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-500 
             to-teal-400 font-extrabold">
               REACT JS
             </span>
@@ -86,7 +86,7 @@ const Skill = () => {
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500
             font-extrabold">
-              Tailwind
+              TAILWIND
             </span>
           </motion.h1>
         </div>
@@ -114,26 +114,27 @@ const Skill = () => {
                        relative bottom-[76px] left-[124px] scale-50
                        drop-shadow-[0_0_15px_rgba(186,85,211,0.8)]"
           >
-            <motion.span 
-            className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-pink-500 to-purple-500">
               Tailwind
-            </motion.span>
+            </span>
           </motion.h1>
         </div>
       </div>
 
       {/* Skills Overview Title */}
-      <motion.h1 initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1, ease: "easeOut" }}
-      
-      id="skills" className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-center
-       text-yellow-400 mt-8 lg:mt-0 
-      relative top-2">
-        My Skills Overview
+      <motion.h1 
+        initial={{ opacity: 0, x: -100 }} 
+        animate={{ opacity: 1, x: 0 }} 
+        transition={{ duration: 1, ease: "easeOut" }}
+        id="skills" 
+        className="text-2xl sm:text-3xl md:text-4xl font-extrabold mb-6 text-center
+        text-yellow-400 mt-8 lg:mt-0 relative top-2"
+      >
+        MY SKILLS OVERVIEW
       </motion.h1>
       
       {/* Skills Grid - Responsive */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full mx-auto lg:relative lg:top-10 relative
-      top-10">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full mx-auto lg:relative lg:top-10 relative top-10">
         {skills.map((skill, index) => (
           <motion.div
             key={skill.name}
@@ -154,7 +155,7 @@ const Skill = () => {
                 })}
               />
             </div>
-            <p className="mt-2 text-sm sm:text-base md:text-lg font-semibold text-center" style={{ color: skill.color }}>
+            <p className="mt-2 text-sm sm:text-base md:text-lg font-extrabold text-center" style={{ color: skill.color }}>
               {skill.name}
             </p>
           </motion.div>
