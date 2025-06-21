@@ -9,3 +9,32 @@
 body,html{
   background-color: black;
 }
+/* Custom Font Classes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@800&family=Montserrat:wght@900&display=swap');
+
+.font-mobile-main {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.font-mobile-tech {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.font-mobile-skills {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: large;
+}
+
+/* Animation for text interaction */
+.interactive-text {
+  transition: all 0.3s ease;
+}
+
+.interactive-text:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 10px currentColor;
+}
