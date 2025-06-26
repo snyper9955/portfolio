@@ -1,18 +1,37 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const WebProj = () => {
-  return (
-    <div className='min-h-screen bg-black text-white flex justify-center '>
-      
-       <div className='relative top-8'><motion.h1 initial={{ opacity: 0, x: -1000 }} animate={{ opacity: 1, x: 0 }} 
-      transition={{ duration: 3, type: "spring" }}
-       className='text-6xl font-bold text-yellow-400 
-       drop-shadow-[0_0_20px_rgba(255,69,0,0.8)]'>Video Project</motion.h1>
-        <motion.hr initial={{ opacity: 0 }} animate={{ opacity: 1}} transition={{ duration: 2,delay: 1 }}
-         className='border-2 border-yellow-400 mt-2  relative top-3' /></div>
-    </div>
-  )
-}
+  const text = 'Video Project';
 
-export default WebProj
+  return (
+    <div className="bg-black text-white flex justify-center   px-4">
+      <div className="flex flex-wrap justify-center gap-x-1 gap-y-3 text-center">
+        {text.split('').map((char, index) => (
+          <motion.span
+            key={index}
+            initial={{ opacity: 0, x: -800 }}
+            animate={{ opacity: 1, x: 0 }}
+            whileHover={{
+              color: '#facc15', // yellow-400
+              scale: 1.2,
+              textShadow: '0px 0px 10px rgba(90, 90, 90, 0.8)',
+            }}
+            transition={{
+              duration: 1.2,
+              type: 'spring',
+              stiffness: 300,
+              damping: 20,
+           
+            }}
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold text-gray-400 cursor-pointer"
+          >
+            {char === ' ' ? '\u00A0' : char}
+          </motion.span>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default WebProj;

@@ -9,6 +9,7 @@ import GraphicDesign from './page/GraphicDesign';
 import VideoProj from './page/VideoProj';
 import WebProj from './page/WebProj';
 import Contact from './component/Contact';
+import ScrollToTop from './component/ScrollToTop';
 
 const MainLayout = ({ children }) => (
   <>
@@ -20,9 +21,11 @@ const MainLayout = ({ children }) => (
 
 const App = () => {
   return (
+    <>
+      <ScrollToTop />
    <Routes>
         <Route
-          path="/portfolio"
+          path="/"
           element={
             <MainLayout>
               
@@ -33,10 +36,11 @@ const App = () => {
             </MainLayout>
           }
         />
-        <Route path="/portfolio/design-projects" element={<GraphicDesign />} />
-        <Route path="/portfolio/video-projects" element={<VideoProj />} />
-        <Route path="/portfolio/web-projects" element={<WebProj />} />
+        <Route path="/design-projects" element={<GraphicDesign />} />
+        <Route path="/video-projects" element={<VideoProj />} />
+        <Route path="/web-projects" element={<WebProj />} />
       </Routes>
+    </>
   );
 };
 

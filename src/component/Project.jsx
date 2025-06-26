@@ -9,29 +9,29 @@ const projects = [
     description: "Build interactive websites using React, TailwindCSS, and API integration.",
     bgColor: "from-purple-500 to-pink-500",
     glowColor: "rgba(168, 85, 247, 0.4)",
-    path: "/portfolio/web-projects"
+    path: "/web-projects"
   },
   {
     title: "Video Production",
     description: "Cinematic video edits using Adobe Premiere Pro & After Effects.",
     bgColor: "from-yellow-500 to-orange-500",
     glowColor: "rgba(234, 179, 8, 0.4)",
-    path: "/portfolio/video-projects"
+    path: "/video-projects"
   },
   {
     title: "Graphic Design",
     description: "Design logos, posters, thumbnails with Adobe Photoshop.",
-    bgColor: "from-green-400 to-blue-500",
+    bgColor: "from-green-500 to-blue-600",
     glowColor: "rgba(74, 222, 128, 0.4)",
-    path: "/portfolio/design-projects"
+    path: "/design-projects"
   },
 ];
 
 const Project = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-t from-gray-950 to-black text-white py-10 px-6 sm:px-12 lg:px-24 
-    relative top-30 overflow-hidden">
-      <div className="max-w-7xl mx-auto relative z-10">
+    <div className=" bg-gradient-to-b from-gray-950 v0 via gray-900 to-gray-950 text-white   
+   overflow-hidden justify-center p-12">
+      <div className="  relative z-10">
         <motion.h1
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-16 text-center leading-tight relative bottom-5"
           initial={{ opacity: 0, y: -30 }}
@@ -45,7 +45,7 @@ const Project = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              className={`relative rounded-3xl shadow-xl p-6 text-white bg-gradient-to-br ${project.bgColor} transition duration-300 overflow-hidden group`}
+              className={`relative rounded-3xl font-semibold shadow-xl p-6 text-white bg-gradient-to-br ${project.bgColor} transition duration-300 overflow-hidden group`}
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ 
@@ -61,7 +61,7 @@ const Project = () => {
               }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-semibold mb-3 relative z-10">{project.title}</h3>
+              <h3 className="text-drop-shadow-[0_0_20px_rgba(255,69,0,0.8)] text-2xl font-extrabold mb-3 relative z-10">{project.title}</h3>
               <p className="text-white/90 text-sm mb-6 relative z-10">{project.description}</p>
 
               <motion.div

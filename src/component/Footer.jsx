@@ -1,14 +1,41 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope, FaYoutube } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+  FaEnvelope,
+  FaYoutube,
+} from "react-icons/fa";
 import { Link } from "react-scroll";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: <FaGithub />, url: "http://github.com/snyper9955" },
-    { icon: <FaLinkedin />, url: "https://www.linkedin.com/in/abhishek-kumar-86a157287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-    { icon: <FaInstagram />, url: "https://www.instagram.com/creative_abhishek__?igsh=MWpvbzdib3dvYng2YQ==" },
-    { icon: <FaEnvelope />, url: "mailto:chemistryhero1@gmail.com" },
-    { icon: <FaYoutube />, url: "https://youtube.com/@creativeabhishekoffical?si=B77M9PyTOXwXsQeS" },
+    {
+      icon: <FaGithub />,
+      url: "http://github.com/snyper9955",
+      hover: "hover:text-white",
+    },
+    {
+      icon: <FaLinkedin />,
+      url: "https://www.linkedin.com/in/abhishek-kumar-86a157287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      hover: "hover:text-blue-500",
+    },
+    {
+      icon: <FaInstagram />,
+      url: "https://www.instagram.com/creative_abhishek__?igsh=MWpvbzdib3dvYng2YQ==",
+      hover: "hover:text-pink-500",
+    },
+    {
+      icon: <FaEnvelope />,
+      url: "mailto:chemistryhero1@gmail.com",
+      hover: "hover:text-yellow-400",
+    },
+    {
+      icon: <FaYoutube />,
+      url: "https://youtube.com/@creativeabhishekoffical?si=B77M9PyTOXwXsQeS",
+      hover: "hover:text-red-500",
+    },
   ];
 
   const footerLinks = [
@@ -42,8 +69,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-t from-gray-900 to-black text-white pt-16 sm:px-6">
-      <hr className="border-t border-gray-700 relative bottom-2"/>
+    <footer className="bg-gradient-to-t from-gray-900 to-black text-white pt-16 sm:px-6 relative top-30">
+      <hr className="border-t border-gray-700" />
       <div className="mx-auto">
         <motion.div
           initial="hidden"
@@ -58,7 +85,8 @@ const Footer = () => {
               Creative Abhishek
             </h3>
             <p className="text-gray-400">
-              Creating digital experiences that inspire and engage. Let's build something amazing together.
+              Creating digital experiences that inspire and engage. Let's build
+              something amazing together.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -69,7 +97,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ y: -3, scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-xl text-gray-400 hover:text-yellow-400 transition-colors"
+                  className={`text-xl text-gray-400 transition-colors ${link.hover}`}
                 >
                   {link.icon}
                 </motion.a>
@@ -102,18 +130,7 @@ const Footer = () => {
           </motion.div>
 
           {/* Newsletter */}
-          <motion.div variants={itemVariants} className="space-y-4">
-            <h4 className="text-lg font-semibold">Stay Updated</h4>
-            <p className="text-gray-400">
-              Subscribe to my newsletter for the latest projects and updates.
-            </p>
-            <motion.div
-              whileHover={{ scale: 1.01 }}
-              className="flex flex-col sm:flex-row gap-2"
-            >
-              {/* Newsletter form can be added here */}
-            </motion.div>
-          </motion.div>
+        
         </motion.div>
 
         {/* Copyright */}
@@ -122,10 +139,11 @@ const Footer = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="border-t border-gray-800 text-center text-gray-500"
+          className="border-t border-gray-800 text-center text-gray-500 py-4"
         >
           <p>
-            &copy; {new Date().getFullYear()} Creative Abhishek. All rights reserved.
+            &copy; {new Date().getFullYear()} Creative Abhishek. All rights
+            reserved.
           </p>
           <p className="mt-2 text-sm">
             Made with ❤️ using React, Tailwind CSS & Framer Motion

@@ -30,7 +30,8 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-black to-gray-900 text-white w-full overflow-hidden relative bottom-0">
+    <div className="bg-gradient-to-t from-gray-950 via-black to-gray-900 text-white w-full overflow-hidden relative bottom-0
+   ">
       {/* === Header Bar === */}
       <div className="flex justify-between items-center flex-wrap gap-4 px-4 sm:px-8 py-4 mx-auto">
         {/* Brand */}
@@ -38,7 +39,7 @@ const Header = () => {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="text-xl sm:text-2xl font-bold whitespace-nowrap md:text-3xl relative left-8"
+          className="text-xl sm:text-2xl font-bold whitespace-nowrap md:text-3xl relative left-8 text-gray-200"
         >
           Creative Abhishek
         </motion.h1>
@@ -51,7 +52,7 @@ const Header = () => {
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="cursor-pointer hover:text-yellow-400 transition-colors"
+              className="cursor-pointer hover:text-yellow-400 transition-colors text-gray-300"
             >
               <Link
                 to={item.target}
@@ -72,7 +73,7 @@ const Header = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: navItems.length * 0.2 }}
           className="hidden md:block bg-blue-400 hover:bg-blue-500 transition-colors px-4 py-2 rounded-md
-           font-bold whitespace-nowrap text-sm sm:text-base"
+           font-bold whitespace-nowrap text-sm sm:text-base text-gray-300"
         >
           More
         </motion.button>
@@ -178,11 +179,11 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <span className="bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent block md:inline">
+            <span className="bg-gradient-to-r from-yellow-500 to-red-500 bg-clip-text text-transparent block md:inline">
               Creative Abhishek
             </span>
             <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent block md:inline">
+            <span className="bg-gradient-to-r from-yellow-500 to-red-500 bg-clip-text text-transparent block md:inline">
               Passionate About Creating Beautiful Experiences
             </span>
           </motion.h1>
@@ -193,8 +194,9 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-           <div className='font-semibold' ><span className='text-green-500' >Frontend Developer </span>| 
-           <span className='text-red-500'> Video Editor </span>| <span className='text-blue-500'>content creator </span>| <span className='text-pink-500' >graphic designer</span><br /></div> dedicated 
+           <div className='font-semibold text-sm sm:text-base md:text-lg' ><span className='text-green-500' >Frontend Developer </span>| 
+           <span className='text-yellow-500'> Graphics Designer </span>| 
+           <span className='text-blue-400'>Video Editor </span>| <span className='text-cyan-500' >Content Creator</span><br /></div> dedicated 
             to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
           </motion.p>
         </motion.div>
