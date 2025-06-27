@@ -7,21 +7,21 @@ const projects = [
   {
     title: "Frontend Development",
     description: "Build interactive websites using React, TailwindCSS, and API integration.",
-   bgColor: "from-gray-800 to-gray-900",
+   bgColor: "from-gray-900 to-gray-950",
     glowColor: "rgba(168, 85, 247, 0.4)",
     path: "/web-projects"
   },
   {
     title: "Video Production",
     description: "Cinematic video edits using Adobe Premiere Pro & After Effects.",
-    bgColor: "from-gray-800 to-gray-900",
+   bgColor: "from-gray-900 to-gray-950",
      glowColor: "rgba(168, 85, 247, 0.4)",
     path: "/video-projects"
   },
   {
     title: "Graphic Design",
     description: "Design logos, posters, thumbnails with Adobe Photoshop & Illustrator.",
-   bgColor: "from-gray-800 to-gray-900",
+    bgColor: "from-gray-900 to-gray-950",
    glowColor: "rgba(168, 85, 247, 0.4)",
     path: "/design-projects"
   },

@@ -47,7 +47,7 @@ const About = () => {
           <div className="grid gap-8 md:grid-cols-2 px-2 sm:px-8">
             {/* Education Box */}
             <motion.div
-              className=" bg-gray-900 p-6 sm:p-5 rounded-2xl border border-gray-800"
+              className=" bg-gradient-to-b from-gray-900 to-gray-950 p-6 sm:p-5 rounded-2xl border border-gray-800"
               whileHover={{
                   scale: 1.01,
                   boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
@@ -55,7 +55,7 @@ const About = () => {
                 }}
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-4">Education</h3>
-              <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
+              <p className="text-gray-300 leading-relaxed font-semibold text-[18px]">
                 Currently pursuing my B.Tech in Computer Science at DCE, Darbhanga.
                 Passionate about learning new technologies and applying them to solve real-world problems.
               </p>
@@ -63,7 +63,7 @@ const About = () => {
 
             {/* Creative Side Box */}
             <motion.div
-              className="bg-gray-900 p-6 sm:p-8 rounded-2xl border border-gray-800"
+              className="bg-gradient-to-b from-gray-900 to-gray-950 p-6 sm:p-8 rounded-2xl border border-gray-800"
              whileHover={{
                   scale: 1.01,
                   boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
@@ -71,7 +71,7 @@ const About = () => {
                 }}
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-4">Creative Side</h3>
-              <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
+              <p className="text-gray-300 leading-relaxed font-semibold text-[18px]">
                 When I'm not coding, I'm creating visual content. Skilled in video editing (Premiere Pro, After Effects)
                 and graphic design (Photoshop, Illustrator). I believe creativity enhances technical skills.
               </p>
