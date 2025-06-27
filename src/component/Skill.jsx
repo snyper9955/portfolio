@@ -94,14 +94,14 @@ const Skill = () => {
           id="skills" 
           className="text-3xl md:text-5xl mb-6 text-center
           text-gray-200 mt-8 lg:mt-0 relative top-8 font-extrabold
-         drop-shadow-[0_0_20px_rgba(125, 125, 125, 0.4) "
+         drop-shadow-[0_0_20px_rgba(125, 125, 125, 0.4)"
         >
           My Skills Overview
         </motion.div>
         
         {/* Skills Grid - Responsive */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 w-full mx-auto 
-        lg:relative lg:top-10 relative top-10">
+        lg:relative lg:top-10 relative top-3">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
