@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-gray-950 via-black to-gray-900 text-white w-full overflow-hidden relative bottom-0
+    <div className="bg-gradient-to-t from-gray-950 via-black to-gray-900 text-white w-full overflow-hidden 
    ">
       {/* === Header Bar === */}
       <div className="flex justify-between items-center flex-wrap gap-4 px-4 sm:px-8 py-4 mx-auto">
@@ -48,7 +48,7 @@ const Header = () => {
         <ul className="hidden md:flex gap-6 font-semibold text-lg">
           {navItems.map((item, index) => (
             <motion.li
-              key={item.target}
+              key={index}
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
@@ -189,16 +189,20 @@ const Header = () => {
           </motion.h1>
 
           <motion.p
-            className="text-sm sm:text-base md:text-lg text-gray-300 font-semibold leading-relaxed md:leading-normal mt-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 1 }}
-          >
-           <div className='font-semibold text-sm sm:text-base md:text-lg ' ><span className='text-green-500' >Frontend Developer </span>| 
-           <span className='text-yellow-500'> Graphics Designer </span>| 
-           <span className='text-blue-400'>Video Editor </span>| <span className='text-cyan-500' >Content Creator</span><br /></div > dedicated 
-            to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together. 
-          </motion.p>
+  className="text-sm sm:text-base md:text-lg text-gray-300 font-semibold leading-relaxed md:leading-normal mt-4"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.8, duration: 1 }}
+>
+  <span className='font-semibold text-sm sm:text-base md:text-lg'>
+    <span className='text-green-500'>Frontend Developer </span>| 
+    <span className='text-yellow-500'> Graphics Designer </span>| 
+    <span className='text-blue-400'>Video Editor </span>| 
+    <span className='text-cyan-500'>Content Creator</span>
+    <br />
+  </span>
+  dedicated to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
+</motion.p>
         </motion.div>
         <motion.a 
           initial={{ opacity: 0 }} 

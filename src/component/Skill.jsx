@@ -31,7 +31,7 @@ const Skill = () => {
    const text = 'FRONTEND DEVELOPER';
   return (
     <div className=" bg-gradient-to-b from-gray-950 via-gray-950 to-gray-950 text-white flex flex-col px-4 
-    py-10 w-full relative top-">
+    py-10 w-full">
       <section id="services">
         {/* Mobile-only Title */}
         <div className="lg:hidden relative top-20">

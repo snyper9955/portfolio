@@ -41,7 +41,7 @@ const About = () => {
           viewport={{ once: true, margin: '-100px' }}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 text-center relative bottom-6">
-            My <span className="text-">Journey</span>
+            My <span className="">Journey</span>
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 px-2 sm:px-8">

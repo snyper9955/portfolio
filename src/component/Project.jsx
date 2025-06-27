@@ -7,22 +7,22 @@ const projects = [
   {
     title: "Frontend Development",
     description: "Build interactive websites using React, TailwindCSS, and API integration.",
-   bgColor: "from-gray-900 to-gray-950",
-    glowColor: "rgba(168, 85, 247, 0.4)",
+   bgColor: "from-yellow-400 to-red-500",
+    glowColor: "rgba(211, 218, 27, 0.4)",
     path: "/web-projects"
   },
   {
     title: "Video Production",
     description: "Cinematic video edits using Adobe Premiere Pro & After Effects.",
-   bgColor: "from-gray-900 to-gray-950",
-     glowColor: "rgba(168, 85, 247, 0.4)",
+    bgColor: "from-pink-400 to-red-500",
+     glowColor: "rgba(189, 43, 43, 0.4)",
     path: "/video-projects"
   },
   {
     title: "Graphic Design",
     description: "Design logos, posters, thumbnails with Adobe Photoshop & Illustrator.",
-    bgColor: "from-gray-900 to-gray-950",
-   glowColor: "rgba(168, 85, 247, 0.4)",
+   bgColor: "from-blue-400 to-green-500",
+   glowColor: "rgba(83, 255, 117, 0.4)",
     path: "/design-projects"
   },
 ];
@@ -61,8 +61,8 @@ const Project = () => {
               }}
               viewport={{ once: true }}
             >
-              <h3 className="text-drop-shadow-[0_0_20px_rgba(255,69,0,0.8)] text-2xl font-extrabold mb-3 relative z-10">{project.title}</h3>
-              <p className="text-gray-400 text-sm mb-6 relative z-10">{project.description}</p>
+              <h3 className="text-drop-shadow-[0_0_20px_rgba(255,69,0,0.8)] text-2xl font-extrabold mb-3 relative z-10 drop">{project.title}</h3>
+              <p className="text-gray-200 text-sm mb-6 relative z-10">{project.description}</p>
 
               <motion.div
               
