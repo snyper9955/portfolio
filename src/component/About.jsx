@@ -18,7 +18,7 @@ const About = () => {
             animate={{ y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500">Digital Experiences</span> 
+            Crafting <span className="text-white">Digital Experiences</span> 
           </motion.h1>
 
           <motion.p
@@ -41,21 +41,21 @@ const About = () => {
           viewport={{ once: true, margin: '-100px' }}
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-12 text-center relative bottom-6">
-            My <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-500">Journey</span>
+            My <span className="text-">Journey</span>
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 px-2 sm:px-8">
             {/* Education Box */}
             <motion.div
-              className=" bg-gray-600 p-6 sm:p-8 rounded-2xl border border-gray-800"
+              className=" bg-gray-900 p-6 sm:p-5 rounded-2xl border border-gray-800"
               whileHover={{
-                scale: 1.02,
-                boxShadow: '0 0 20px rgba(99, 179, 237, 0.4)',
-                borderColor: 'rgba(99, 179, 237, 0.4)',
-              }}
+                  scale: 1.01,
+                  boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
+                  borderColor: 'rgba(255, 215, 0, 0.4)',
+                }}
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-4">Education</h3>
-              <p className="text-gray-300 leading-relaxed font-semibold text-[18px]">
+              <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
                 Currently pursuing my B.Tech in Computer Science at DCE, Darbhanga.
                 Passionate about learning new technologies and applying them to solve real-world problems.
               </p>
@@ -63,15 +63,15 @@ const About = () => {
 
             {/* Creative Side Box */}
             <motion.div
-              className="bg-cyan-900 p-6 sm:p-8 rounded-2xl border border-gray-800"
-              whileHover={{
-                scale: 1.02,
-                boxShadow: '0 0 20px rgba(255, 105, 180, 0.4)',
-                borderColor: 'rgba(255, 105, 180, 0.4)',
-              }}
+              className="bg-gray-900 p-6 sm:p-8 rounded-2xl border border-gray-800"
+             whileHover={{
+                  scale: 1.01,
+                  boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
+                  borderColor: 'rgba(255, 215, 0, 0.4)',
+                }}
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-4">Creative Side</h3>
-              <p className="text-gray-300 leading-relaxed font-semibold text-[18px]">
+              <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
                 When I'm not coding, I'm creating visual content. Skilled in video editing (Premiere Pro, After Effects)
                 and graphic design (Photoshop, Illustrator). I believe creativity enhances technical skills.
               </p>

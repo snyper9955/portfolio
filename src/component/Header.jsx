@@ -194,10 +194,10 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8, duration: 1 }}
           >
-           <div className='font-semibold text-sm sm:text-base md:text-lg' ><span className='text-green-500' >Frontend Developer </span>| 
+           <div className='font-semibold text-sm sm:text-base md:text-lg ' ><span className='text-green-500' >Frontend Developer </span>| 
            <span className='text-yellow-500'> Graphics Designer </span>| 
-           <span className='text-blue-400'>Video Editor </span>| <span className='text-cyan-500' >Content Creator</span><br /></div> dedicated 
-            to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
+           <span className='text-blue-400'>Video Editor </span>| <span className='text-cyan-500' >Content Creator</span><br /></div > dedicated 
+            to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together. 
           </motion.p>
         </motion.div>
         <motion.a 
