@@ -93,7 +93,8 @@ const Skill = () => {
           whileHover={{ scale: 1.1  }}
           id="skills" 
           className="text-3xl md:text-5xl mb-6 text-center
-          text-gray-200 mt-8 lg:mt-0 relative top-8 font-extrabold
+          text-gray-200 mt-8 lg:mt-0
+           font-extrabold
          drop-shadow-[0_0_20px_rgba(125, 125, 125, 0.4)"
         >
           My Skills Overview
