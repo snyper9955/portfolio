@@ -38,7 +38,7 @@ const WebProj = () => {
   playsInline
   controls
 >
-  <source src="V1.mp4" type="video/mp4" />
+  <source src="/V1.mp4" type="video/mp4" />
   {/*
     Note: If this video does not play after deployment on Vercel,
     check that:
