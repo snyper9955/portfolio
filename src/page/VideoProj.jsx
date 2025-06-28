@@ -38,8 +38,15 @@ const WebProj = () => {
   playsInline
   controls
 >
-  <source src="/V1.mp4" type="video/mp4" />
-  Your browser does not support the video tag.hh
+  <source src="V1.mp4" type="video/mp4" />
+  {/*
+    Note: If this video does not play after deployment on Vercel,
+    check that:
+    1. The file is in the public/ directory and the path is exactly "/V1.mp4" (case-sensitive).
+    2. The file size is under 100 MB (Vercel's static file limit).
+    3. There are no typos in the filename or extension.
+  */}
+  Your browser does not support the video tag.
 </video>
 
 
