@@ -110,7 +110,7 @@ const Skill = () => {
               transition={{ delay: index * 0.3, duration: 0.8 }}
               className="flex flex-col items-center w-full "
             >
-              <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative top-9 ">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 relative  ">
                 <CircularProgressbar
                   value={skill.percentage}
                   text={`${skill.percentage}%`}
@@ -122,7 +122,7 @@ const Skill = () => {
                   })}
                 />
               </div>
-              <p className="mt-2  sm:text-base md:text-lg font-semibold text-center relative top-8" 
+              <p className="mt-2  sm:text-base md:text-lg font-semibold text-center relative " 
                  style={{ color: skill.color }}>
                 {skill.name}
               </p>

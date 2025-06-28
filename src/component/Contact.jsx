@@ -49,7 +49,8 @@ const contactLinks = [
 
 const Contact = () => {
   return (
-    <div className="relative bg-gradient-to-t from-gray-950 to-gray-950 text-white flex flex-col items-center justify-center py-12 px-4 sm:px-8 overflow-hidden">
+    <div className="relative  bg-gradient-to-t from-gray-950 to-gray-950 text-white 
+    flex flex-col items-center justify-center py-12 px-4 sm:px-8 overflow-hidden ">
       
       {/* Background grid */}
       <div className="absolute inset-0 z-0 
