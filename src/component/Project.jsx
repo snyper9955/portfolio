@@ -40,6 +40,16 @@ const Project = () => {
         >
           Explore My <span className="bg-gradient-to-r from-yellow-400 to-red-500 bg-clip-text text-transparent">Projects</span>
         </motion.h1>
+        <div className="flex  items-center ">
+      <a
+        href="https://creative-abhishek-portfolio.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-6 py-3  text-blue-500 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300"
+      ><li>https://creative-abhishek-portfolio.vercel.app/</li>
+        
+      </a>
+    </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative top-5 ">
           {projects.map((project, index) => (
