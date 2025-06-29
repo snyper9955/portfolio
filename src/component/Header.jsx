@@ -195,10 +195,10 @@ const Header = () => {
   transition={{ delay: 0.8, duration: 1 }}
 >
   <span className='font-semibold text-sm sm:text-base md:text-lg'>
-    <span className='text-green-500'>Frontend Developer </span>| 
+    <span className='text-green-500'> Frontend Developer </span>| 
     <span className='text-yellow-500'> Graphics Designer </span>| 
-    <span className='text-blue-400'>Video Editor </span>| 
-    <span className='text-cyan-500'>Content Creator</span>
+    <span className='text-blue-400'> Video Editor </span>| 
+    <span className='text-cyan-500'> Content Creator</span>
     <br />
   </span>
 
