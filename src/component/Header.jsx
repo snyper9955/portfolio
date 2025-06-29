@@ -209,8 +209,8 @@ const Header = () => {
             transition={{ delay: 1, duration: 0.8 }}
           >
             I'm <span className="text-white font-bold ">Abhishek Kumar</span>, a 
-            <span className="text-yellow-300 font-bold"> Computer Science</span> student at DCE Darbhanga, passionate about building beautiful digital
-             experiences, Passionate about <span className='text-green-400 font-semibold'>Frontend Developer </span>who works with React.js and Tailwind CSS. I enjoy making clean,
+            <span className="text-yellow-300 font-bold"> Computer Science</span> student at DCE Darbhanga, 
+             experiences, Passionate about <span className='text-green-400 font-bold text-xl'>Frontend Developer </span>who works with React.js and Tailwind CSS. I enjoy making clean,
                  mobile-friendly websites and turning designs into real, interactive pages.
           </motion.p></motion.p>
         </motion.div>
