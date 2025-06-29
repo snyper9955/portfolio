@@ -201,8 +201,18 @@ const Header = () => {
     <span className='text-cyan-500'>Content Creator</span>
     <br />
   </span>
- I’m a Frontend Developer who works with React.js and Tailwind CSS. I enjoy making clean, mobile-friendly websites and turning designs into real, interactive pages.
-</motion.p>
+
+          <motion.p
+            className="text-base sm:text-lg md:text-xl text-gray-300  mx-auto relative top-4 leading-relaxed md:leading-normal"
+            initial={{ opacity: 1 ,X: -400 }}
+            animate={{ opacity: 1, X: 0 }}
+            transition={{ delay: 1, duration: 0.8 }}
+          >
+            I'm <span className="text-white font-bold ">Abhishek Kumar</span>, a 
+            <span className="text-yellow-300 font-bold"> Computer Science</span> student at DCE Darbhanga, passionate about building beautiful digital
+             experiences, Passionate about <span className='text-green-400 font-semibold'>Frontend Developer </span>who works with React.js and Tailwind CSS. I enjoy making clean,
+                 mobile-friendly websites and turning designs into real, interactive pages.
+          </motion.p></motion.p>
         </motion.div>
         <motion.a 
           initial={{ opacity: 0 }} 

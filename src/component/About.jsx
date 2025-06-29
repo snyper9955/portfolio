@@ -21,17 +21,6 @@ const About = () => {
             Crafting <span className="text-white">Digital Experiences</span> 
           </motion.h1>
 
-          <motion.p
-            className="text-base sm:text-lg md:text-xl text-gray-300  mx-auto relative bottom-8"
-            initial={{ opacity: 1 ,X: -400 }}
-            animate={{ opacity: 1, X: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-          >
-            I'm <span className="text-white font-bold ">Abhishek Kumar</span>, a 
-            <span className="text-yellow-300 font-bold"> Computer Science</span> student at DCE Darbhanga, passionate about building beautiful digital
-             experiences, Passionate about <span className='text-yellow-300 font-semibold'>Frontend Developer </span>who works with React.js and Tailwind CSS. I enjoy making clean,
-                 mobile-friendly websites and turning designs into real, interactive pages.
-          </motion.p>
         </motion.section>
 
         {/* About Cards */}
@@ -57,7 +46,7 @@ const About = () => {
                 }}
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-400" >Education</h3>
-              <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
+              <p className="text-gray-300 leading-relaxed font-semibold text-[18px]">
                 Currently pursuing my B.Tech in Computer Science at DCE, Darbhanga.
                
               </p>
@@ -73,7 +62,7 @@ const About = () => {
                 }}
             >
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-400">Creative Side</h3>
-              <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
+              <p className="text-gray-300 leading-relaxed font-semibold text-[18px]">
                 When I'm not coding, I'm creating visual content. Skilled in video editing (Premiere Pro, After Effects)
                 and graphic design (Photoshop, Illustrator). I believe creativity enhances technical skills.
               </p>
