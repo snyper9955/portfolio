@@ -216,6 +216,7 @@ const Header = () => {
           connect me
         </motion.a>
       </div>
+      
     </div>
   );
 };

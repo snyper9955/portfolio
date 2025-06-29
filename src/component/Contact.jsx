@@ -51,6 +51,21 @@ const Contact = () => {
   return (
     <div className="relative  bg-gradient-to-t from-gray-950 to-gray-950 text-white 
     flex flex-col items-center justify-center py-12 px-4 sm:px-8 overflow-hidden ">
+      <div class=" text-gray-300 p-6 rounded-lg shadow-md max-w-6xl mx-auto text-center ">
+  <h2 class="text-2xl sm:text-3xl font-bold text-yellow-400 mb-4">Frontend Developer</h2>
+  <p class="text-base sm:text-lg leading-relaxed">
+    I’m a passionate <span class='text-yellow-300 font-semibold text-xl'>Frontend Developer </span> who builds interactive, user-focused web experiences using modern tools like 
+    <span class="text-pink-400 font-semibold text-xl"> React.js</span>, 
+    <span class="text-cyan-400 font-semibold text-xl"> Tailwind CSS</span>, and 
+    <span class="text-green-400 font-semibold text-xl" > JavaScript</span>.
+    I enjoy translating UI/UX designs into functional, fast, and responsive interfaces.
+  </p>
+  <p class="mt-4 text-base sm:text-lg leading-relaxed">
+    I focus on writing clean, maintainable code and creating pixel-perfect components that perform well across all devices.
+    My goal is to bridge the gap between design and development, delivering smooth, intuitive user experiences.
+  </p>
+</div>
+
       
       {/* Background grid */}
       <div className="absolute inset-0 z-0 
