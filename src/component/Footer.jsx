@@ -69,8 +69,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gradient-to-t from-gray-900 to-black text-white pt-16 sm:px-6 relative top-30">
-      <hr className="border-t border-gray-700" />
+    <footer className="bg-gradient-to-t from-gray-900 to-black text-white pt-16 sm:px-6 relative ">
+      <hr className="border-t border-gray-700 relative bottom-5"  />
       <div className="mx-auto">
         <motion.div
           initial="hidden"
@@ -134,21 +134,7 @@ const Footer = () => {
         </motion.div>
 
         {/* Copyright */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="border-t border-gray-800 text-center text-gray-500 py-4"
-        >
-          <p>
-            &copy; {new Date().getFullYear()} Creative Abhishek. All rights
-            reserved.
-          </p>
-          <p className="mt-2 text-sm">
-            Made with ❤️ using React, Tailwind CSS & Framer Motion
-          </p>
-        </motion.div>
+        
       </div>
     </footer>
   );

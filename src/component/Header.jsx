@@ -201,7 +201,7 @@ const Header = () => {
     <span className='text-cyan-500'>Content Creator</span>
     <br />
   </span>
-  dedicated to blending creativity with functionality. Every pixel and every second matters. Let's build something extraordinary together.
+ I’m a Frontend Developer who works with React.js and Tailwind CSS. I enjoy making clean, mobile-friendly websites and turning designs into real, interactive pages.
 </motion.p>
         </motion.div>
         <motion.a 

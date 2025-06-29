@@ -28,7 +28,9 @@ const About = () => {
             transition={{ delay: 1, duration: 0.8 }}
           >
             I'm <span className="text-white font-bold ">Abhishek Kumar</span>, a 
-            <span className="text-yellow-300 font-bold"> Computer Science</span> student at DCE Darbhanga, passionate about building beautiful digital experiences.
+            <span className="text-yellow-300 font-bold"> Computer Science</span> student at DCE Darbhanga, passionate about building beautiful digital
+             experiences, Passionate about <span className='text-yellow-300 font-semibold'>Frontend Developer </span>who works with React.js and Tailwind CSS. I enjoy making clean,
+                 mobile-friendly websites and turning designs into real, interactive pages.
           </motion.p>
         </motion.section>
 
@@ -57,7 +59,7 @@ const About = () => {
               <h3 className="text-xl sm:text-2xl font-bold mb-4 text-yellow-400" >Education</h3>
               <p className="text-gray-400 leading-relaxed font-semibold text-[18px]">
                 Currently pursuing my B.Tech in Computer Science at DCE, Darbhanga.
-                Passionate about learning new technologies and applying them to solve real-world problems.
+               
               </p>
             </motion.div>
 
