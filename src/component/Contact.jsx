@@ -55,7 +55,8 @@ const Contact = () => {
                   scale: 1.01,
                   boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
                   borderColor: 'rgba(255, 215, 0, 0.4)',
-                }} class=" text-gray-300 p-6 rounded-lg shadow-md max-w-6xl mx-auto text-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900
+                }} class=" text-gray-300 p-6 rounded-lg shadow-md max-w-6xl mx-auto text-center bg-gradient-to-b from-gray-950 via-gray-900
+                 to-gray-950
       border border-gray-700 backdrop-blur-sm">
   <h2 class="text-2xl sm:text-3xl font-bold text-yellow-400 mb-4">Frontend Developer</h2>
   <p class="text-base sm:text-lg leading-relaxed ">
