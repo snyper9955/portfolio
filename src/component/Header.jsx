@@ -194,7 +194,7 @@ const Header = () => {
   animate={{ opacity: 1 }}
   transition={{ delay: 0.8, duration: 1 }}
 >
-  <span className='font-semibold text-xl'>
+  <span className='font-semibold '>
     <span className='text-green-500'> Frontend Developer </span>| 
     <span className='text-yellow-500'> Graphics Designer </span>| 
     <span className='text-blue-400'> Video Editor </span>| 

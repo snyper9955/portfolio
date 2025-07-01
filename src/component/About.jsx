@@ -38,7 +38,7 @@ const About = () => {
           <div className="grid gap-8 md:grid-cols-2 px-2 sm:px-8 ">
             {/* Education Box */}
             <motion.div
-              className=" bg-gradient-to-b from-gray-900 to-gray-950 p-6 sm:p-5 rounded-2xl border-2 border-gray-800"
+              className=" bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 p-6 sm:p-5 rounded-2xl border-2 border-gray-800"
               whileHover={{
                   scale: 1.01,
                   boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
@@ -54,7 +54,7 @@ const About = () => {
 
             {/* Creative Side Box */}
             <motion.div
-              className="bg-gradient-to-b from-gray-900 to-gray-950 p-6 sm:p-8 rounded-2xl border-2 border-gray-800"
+              className="bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 p-6 sm:p-8 rounded-2xl border-2 border-gray-800"
              whileHover={{
                   scale: 1.01,
                   boxShadow: '0 0 12px rgba(255, 215, 0, 0.4)',
