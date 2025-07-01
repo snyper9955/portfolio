@@ -51,9 +51,9 @@ const Contact = () => {
   return (
     <div className="relative  bg-gradient-to-t from-gray-950 to-gray-950 text-white 
     flex flex-col items-center justify-center py-12 px-4 sm:px-8 overflow-hidden ">
-      <div class=" text-gray-300 p-6 rounded-lg shadow-md max-w-6xl mx-auto text-center ">
+      <div class=" text-gray-300 p-6 rounded-lg shadow-md max-w-6xl mx-auto text-center bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
   <h2 class="text-2xl sm:text-3xl font-bold text-yellow-400 mb-4">Frontend Developer</h2>
-  <p class="text-base sm:text-lg leading-relaxed">
+  <p class="text-base sm:text-lg leading-relaxed ">
     I’m a passionate <span class='text-yellow-300 font-semibold text-xl'>Frontend Developer </span> who builds interactive, user-focused web experiences using modern tools like 
     <span class="text-pink-400 font-semibold text-xl"> React.js</span>, 
     <span class="text-cyan-400 font-semibold text-xl"> Tailwind CSS</span>, and 

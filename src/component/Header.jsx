@@ -39,7 +39,7 @@ const Header = () => {
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
-          className="text-xl sm:text-2xl font-bold whitespace-nowrap md:text-3xl relative left-8 text-gray-200"
+          className="text-xl sm:text-2xl font-bold whitespace-nowrap md:text-3xl relative left-8 text-cyan-400"
         >
           Creative Abhishek
         </motion.h1>
@@ -179,12 +179,12 @@ const Header = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
           >
-            <span className="bg-gradient-to-r from-yellow-500 to-red-500 bg-clip-text text-transparent block md:inline">
+            <span className=" text-cyan-400 block md:inline">
               Creative Abhishek
             </span>
             <br className="hidden md:block" />
             <span className="bg-gradient-to-r from-yellow-500 to-red-500 bg-clip-text text-transparent block md:inline">
-             Crafting Beautiful & Modern Frontend Interfaces
+             Crafting Beautiful & Modern UI
             </span>
           </motion.h1>
 
@@ -194,7 +194,7 @@ const Header = () => {
   animate={{ opacity: 1 }}
   transition={{ delay: 0.8, duration: 1 }}
 >
-  <span className='font-semibold text-sm sm:text-base md:text-lg'>
+  <span className='font-semibold text-xl'>
     <span className='text-green-500'> Frontend Developer </span>| 
     <span className='text-yellow-500'> Graphics Designer </span>| 
     <span className='text-blue-400'> Video Editor </span>| 
